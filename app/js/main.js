@@ -5,55 +5,55 @@ angular
     .module('Resume', ['ui.router', 'ngAnimate','anim-in-out'])
     .config(function($stateProvider, $urlRouterProvider)
     {
-        $urlRouterProvider.otherwise('/page/tab1');
+        $urlRouterProvider.otherwise('/page/About');
         $stateProvider
-            .state('tab1', {
-                name: 'tab1',
-                url: '/tab1',
-                templateUrl: 'app/views/tab1.html'
+            .state('About', {
+                name: 'About',
+                url: '/About',
+                templateUrl: 'app/views/About.html'
             })
-            .state('tab2', {
-                name: 'tab2',
-                url: '/tab2',
-                templateUrl: 'app/views/tab2.html'
+            .state('Tech-Skills', {
+                name: 'Tech-Skills',
+                url: '/Tech-Skills',
+                templateUrl: 'app/views/Tech-Skills.html'
             })
-            .state('tab3', {
-                name: 'tab3',
-                url: '/tab3',
-                templateUrl: 'app/views/tab3.html'
+            .state('Projects', {
+                name: 'Projects',
+                url: '/Projects',
+                templateUrl: 'app/views/Projects.html'
             })
-            .state('tab4', {
-                name: 'tab4',
-                url: '/tab4',
-                templateUrl: 'app/views/tab4.html'
+            .state('Contact', {
+                name: 'Contact',
+                url: '/Contact',
+                templateUrl: 'app/views/Contact.html'
             });
     })
     .controller('DemoController', function( $scope, $window, $state ,$timeout)
     {
         $scope.transition = 'slide-left';
-        $state.go('tab1');
+        $state.go('About');
         $scope.left = function()
         {
             $scope.transition = 'anim-slide-left';
-            $state.go('tab1');
+            $state.go('About');
         };
 
         $scope.right = function()
         {
             $scope.transition = 'anim-slide-right';
-            $state.go('tab2');
+            $state.go('Tech-Skills');
         };
 
         $scope.top = function()
         {
             $scope.transition = 'anim-slide-left';
-            $state.go('tab3');
+            $state.go('Projects');
         };
 
         $scope.bottom = function()
         {
             $scope.transition = 'anim-slide-right';
-            $state.go('tab4');
+            $state.go('Contact');
         };
 
     });
