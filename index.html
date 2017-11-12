@@ -1,58 +1,348 @@
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-   <title>Kaushik Samanta</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-   <link href="app/css/style.css" rel="stylesheet" type="text/css">
-   <link href="bower_components/angular-ui-router-anim-in-out/css/anim-in-out.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-<body ng-app="Resume" ng-controller="DemoController">
-<div>
-   <header>
-      <h1>My Name is Kaushik Samanta</h1>
-      <h2 style="color: #1D1D1D;">I'm a Full stack Developer From Chandigarh</h2>
-   </header>
-   <nav>
-      <ul>
-         <li>
-            <a title="About"
-                  ng-class="{active:transition=='slide-left'}" 		ng-click="left()">
-               About
-            </a>
-         </li>
-         <li>
-            <a title="Tech-Skills"
-                  ng-class="{'active':transition=='slide-right'}" 	ng-click="right()">
-               Tech-Skills
-            </a>
-         </li>
-         <!-- <li>
-            <a title="Projects"
-                  ng-class="{'active':transition=='slide-top'}" 		ng-click="top()">
-               Projects
-            </a>
-         </li> -->
-         <li>
-            <a title="Contact"
-                  ng-class="{'active':transition=='slide-bottom'}" 	ng-click="bottom()">
-               Contact
-            </a>
-         </li>
-      </ul>
-   </nav>
+    <title>Kaushik Samanta</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaushik Samanta Portfolio">
+    <meta name="author" content="Kaushik Samanta">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
 
-   <div class="content">
-      <div ui-view  class="anim-in-out" ng-class="transition" data-anim-speed="500" data-anim-sync="true">
+<body style="background-image: url('http://zyzixun.net/data/out/109/3758290-material-wallpapers.png');">
+    <!-- ******HEADER****** --> 
+    <header class="header wow fadeInLeft">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left img-circle" style="width: 180px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAqwAAAAJGNmZDczMTJlLTgxNTEtNDkxZS04YmY5LWY5ODg3YjY0Yjg2ZQ.jpg" alt="Kaushik Samanta" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Kaushik Samanta</h1>
+                <h2 class="desc">Full Stack Developer</h2>   
+                <ul class="social list-inline">
+                    <li><a href="https://www.linkedin.com/in/kaushik-samanta-539468113/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/kaushiksamanta" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                </ul> 
+            </div><!--//profile-->
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section wow fadeInLeft">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>An experienced, enthusiastic and passionate Full Stack Developer with a great desire for
+                                continued professional and personal growth. As a full stack developer I have supported and
+                                led many exciting and challenging projects for various startups. Particularly interested in Full stack web development and usability improvement. Fascinated by early-
+                                stage and growing start-ups.</p>    
+                            <p>
+                                Specialties: 
+                                • Web Application Development 
+                                • HTML5, CSS3, Advanced Javascript, MySQL, Angular Js , Node JS , Mongo DB , Express JS
+                                • Social Media Integration 
+                                • Database Management
+                                • Facebook API, Twitter API, Google Maps API, Google Analytics API, Foursquare API, Flickr API                                
+                            </p>                   
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section wow fadeInLeft">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
 
-      </div>
-   </div>
-</div>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="bower_components/angular-ui-router-anim-in-out/anim-in-out.js"></script>
-<script src="app/js/main.js"></script>
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://kaushiksamanta.github.io/angular-desktop-notification" target="_blank">
+                                    <img class="img-responsive project-image" src="https://kaushiksamanta.github.io/angular-desktop-notification/screenshot.JPG" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Angular Desktop Notifications</a>
+                                    </h3>
+                                    <p>Angular Desktop Notifications is open source project developed to provide desktop notification for your angular application through a very simple api without any Jquery dependencies.And it only adds ~40 lines to your project.</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kaushiksamanta/AngularSample" target="_blank">
+                                <img class="img-responsive project-image" src="https://s3.envato.com/files/165014298/ss1.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Angular Admin Panel</a>
+                                    </h3>
+                                    <p>A clean and simple web dashboard application based on Bootstrap and multiple frameworks. All components included in this dashboard template has been developed to bring all the potential of HTML5 and Bootstrap plus a set of new features (JS and CSS) ideal for admin web app project.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kaushiksamanta/AngularMaterial" target="_blank">
+                                    <img class="img-responsive project-image" style="height: 85px;" src="https://material.angularjs.org/latest/img/icons/angular-logo.svg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Angular Material Demo</a>
+                                    </h3>
+                                    <p>A simple project developed using google's material design framework called Angular Material.</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kaushiksamanta/AngularSample" target="_blank">
+                                    <img class="img-responsive project-image" src="http://underscorejs.org/docs/images/underscore.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title">
+                                            <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Underscore Js Demo</a>
+                                        </h3>
+                                        <p>A simple project to demonstrate the power of underscore JS which is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects.</p>
+                                    </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kaushiksamanta/AsyncJs-Example" target="_blank">
+                                    <img class="img-responsive project-image" src="https://raw.githubusercontent.com/caolan/async/master/logo/async-logo_readme.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Async Js Demo</a>
+                                    </h3>
+                                    <p>A simple project to demonstrate the power of Async JS which is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kaushiksamanta/Express-Sample" target="_blank">
+                                    <img class="img-responsive project-image" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Express Js Demo</a>
+                                    </h3>
+                                    <p>A simple project developed to create api's using node js framework.</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section wow fadeInLeft">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Angular JS Team Lead - <span class="place"><a class="title" href="https://www.code-brew.com/" target="_blank">Code Brew Labs</a></span> <span class="year">(Nov 2016 - July 2017)</span></h3>
+                                <p>1) Owning the Admin Panel and website product development from scratch using latest technologies like Angular JS, Jquery, Angular Material ,Bower,Grunt , Gulp, Webpack and npm.</p>
+                                <p>2) Training interns on complete front end development from vanilla javascript to high end javascript frameworks like Angular JS.</p>
+                                <p>3) Convert HTML mocks to complete angular JS application.</p>
+                                <p>4) Build scalable Angular JS applications.</p>
+                                <p>5) Design, create and consume application API's.</p>
+                                <p>6) Work closely with Design, Developemnt and QA team to maintain and enhance products.</p>
+                                <p>7) Work in a fast paced environment with cross functional teams.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software Developer - <span class="place"><a class="title" href="http://click-labs.com/" target="_blank">Click Labs Pvt. Ltd.</a></span> <span class="year">(Jan 2016 - Sep 2016)</span></h3>
+                                <p>1) Develop and support client side engineering solutions which deliver highly performing user experience.</p>
+                                <p>2) Drive continuous improvements in performance , scalability , reliability and usability.</p>
+                                <p>3) Develop using javascript and css frameworks like Angular JS, Jquery , Twitter Bootstrap.</p>
+                                <p>4) Integrate API's into frontend Admin Panels.</p>
+                                <p>5) Worked closely  with Marketing Design Team to ensure that UI reflected design layouts.</p>
+                                <p>6) Utilize Jira for team collaboration task and bug monitoring.</p>
+                                <p>7) Worked with real time chat applications with socket.io.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Software Developer Trainee - <span class="place"><a class="title" href="https://www.jugnoo.in/" target="_blank">Jugnoo (Socomo Technologies Pvt. Ltd.)</a></span> <span class="year">(Aug 2015 - Dec 2015)</span></h3>
+                                <p>
+                                    Training in Angular JS, NodeJS, Mongo DB and libraries underscore JS, Backbone JS and frameworks express js , hapi js etc.
+                                </p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section wow fadeInRight">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub Activity Stream</h2>
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section wow fadeInRight">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Montreal, Quebec, Canada</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">kaushiksamanta23@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://kaushiksamanta.github.io</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner wow fadeInRight">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Angular JS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Node JS<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Java<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Command Line Linux<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Git<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Java<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section wow fadeInRight">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> M.S. Computer Science</h3>
+                                <h4 class="university">Concordia University, Montreal, Canada <span class="year">(2017 - 2019)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BTech. Computer Science</h3>
+                                <h4 class="university">Chitkara University, Punjab, India <span class="year">(2012 - 2016)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section wow fadeInRight">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">&nbsp;&nbsp;&nbsp;&nbsp;<br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">&nbsp;&nbsp;&nbsp;&nbsp;<br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Bengali:</strong></span>
+                                    <span class="level">&nbsp;&nbsp;&nbsp;&nbsp;<br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+         </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="https://github.com/matthieua/WOW/blob/master/dist/wow.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!--<script>-->
+        <!--new WOW().init();-->
+    <!--</script>-->
 </body>
-</html>
+</html> 
+
